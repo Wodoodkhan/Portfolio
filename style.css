@@ -1,0 +1,25 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Add spacing */
+body {
+    padding: 20px;
+}
