@@ -83,3 +83,12 @@ a:hover {
 .project-card a:hover {
     text-decoration: underline;
 }
+
+/* Banner Styling */
+.banner {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
