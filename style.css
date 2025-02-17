@@ -107,3 +107,13 @@ p {
 .download-btn:hover {
     background-color: #005bb5;
 }
+
+/* Fix for active button */
+.download-btn:visited {
+    background-color: #0073e6; /* Keep the original color */
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
