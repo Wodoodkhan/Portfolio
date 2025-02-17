@@ -117,3 +117,24 @@ p {
 .download-btn:hover {
     background-color: #005bb5;
 }
+
+
+/* Smooth hover effect for buttons */
+.download-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Section hover effect */
+.project-card, section {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.project-card:hover, section:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
