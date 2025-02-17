@@ -7,11 +7,22 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
+/* Sticky Navigation Bar */
 nav {
     background-color: #333;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Adjust body to prevent content from hiding behind the navbar */
+body {
+    padding-top: 50px;
+}
+
 
 nav ul {
     list-style: none;
