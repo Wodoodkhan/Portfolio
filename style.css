@@ -174,3 +174,15 @@ p {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
 }
+
+
+
+/* Interactive Project Cards */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
