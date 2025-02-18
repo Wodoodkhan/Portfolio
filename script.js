@@ -14,3 +14,19 @@ window.onscroll = function () {
 scrollTopBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+// Get all project cards
+let projectCards = document.querySelectorAll(".project-card");
+
+// Add hover effect
+projectCards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        card.style.backgroundColor = "#f0f8ff"; // Light blue effect
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.backgroundColor = "white"; // Reset to default
+    });
+});
