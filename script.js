@@ -30,3 +30,25 @@ projectCards.forEach(card => {
         card.style.backgroundColor = "white"; // Reset to default
     });
 });
+
+
+// Language toggle logic
+const langToggleBtn = document.getElementById("lang-toggle");
+let currentLang = "EN";
+
+langToggleBtn.addEventListener("click", () => {
+    const aboutEN = document.getElementById("about-en");
+    const aboutIT = document.getElementById("about-it");
+
+    if (currentLang === "EN") {
+        aboutEN.style.display = "none";
+        aboutIT.style.display = "block";
+        currentLang = "IT";
+        langToggleBtn.innerHTML = "🇮🇹 IT : EN 🇺🇸";
+    } else {
+        aboutEN.style.display = "block";
+        aboutIT.style.display = "none";
+        currentLang = "EN";
+        langToggleBtn.innerHTML = "🇺🇸 EN : IT 🇮🇹";
+    }
+});
