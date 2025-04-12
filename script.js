@@ -16,7 +16,6 @@ scrollTopBtn.addEventListener("click", function () {
 });
 
 
-
 // Get all project cards
 let projectCards = document.querySelectorAll(".project-card");
 
@@ -39,16 +38,29 @@ let currentLang = "EN";
 langToggleBtn.addEventListener("click", () => {
     const aboutEN = document.getElementById("about-en");
     const aboutIT = document.getElementById("about-it");
+    const welcomeEN = document.getElementById("welcome-en");
+    const welcomeIT = document.getElementById("welcome-it");
 
     if (currentLang === "EN") {
+        // Switch to Italian
         aboutEN.style.display = "none";
         aboutIT.style.display = "block";
+
+        welcomeEN.style.display = "none";
+        welcomeIT.style.display = "block";
+
         currentLang = "IT";
         langToggleBtn.innerHTML = "🇮🇹 IT : EN 🇺🇸";
     } else {
+        // Switch to English
         aboutEN.style.display = "block";
         aboutIT.style.display = "none";
+
+        welcomeEN.style.display = "block";
+        welcomeIT.style.display = "none";
+
         currentLang = "EN";
         langToggleBtn.innerHTML = "🇺🇸 EN : IT 🇮🇹";
     }
 });
+
